@@ -6,10 +6,10 @@
 #include <stdio.h>
 int main(int argc, char *argv[])
 {
-  int i;
+  int a;
   printf ("please input decimalism number:\n");
-  scanf("%d",&i);
-  printf ("the hex number is %x\n",i);
+  scanf("%d",&a);
+  printf ("the hex number is %x\n",a);
   return 0;
 }
 */
@@ -23,7 +23,7 @@ N进制转换为十进制
 main()
 {
   long t1;
-  int i,n,t,t3;
+  int a,n,t,t3;
   char a[100];
   printf ("please input a number string:\n");
   gets(a);      //输入N进制数存到数组a中
@@ -32,9 +32,9 @@ main()
   t1=0;
   printf ("please input n(2or8or16):\n");
   scanf("%d",&n);
-  for (i=0; i<t3; i++)
+  for (a=0; a<t3; a++)
     {
-      if (a[i]-'0'>=n&&a[i]<'A'||a[i]-'A'+10>=n)//判断输入的数据和进制数是否相等
+      if (a[a]-'0'>=n&&a[a]<'A'||a[a]-'A'+10>=n)//判断输入的数据和进制数是否相等
 {
   printf ("data error!!");
   exit(0);        //推出程序
