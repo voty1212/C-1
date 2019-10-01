@@ -1,13 +1,13 @@
 #include <stdio.h>
 int main(int argc, char *argv[])
 {
-  int i,j,k;
-  for (i=1;i<5;i++)
-    for (j=1;j<5;j++)
-      for (k=1; k<5; k++)
+  int a,b,c;
+  for (a=1;a<5;a++)
+    for (b=1;b<5;b++)
+      for (c=1; c<5; c++)
 	{
-	  if(i!=j&&i!=k&&j!=k)
-	    printf ("%d,%d,%d\n",i,j,k);
+	  if(c!=b&&a!=c&&b!=c)
+	    printf ("%d,%d,%d\n",a,b,c);
 	}
   return 0;
 }
